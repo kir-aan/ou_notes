@@ -8,11 +8,22 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Center(
-        child: Container(
-          width: 350,
-          height: 350,
-          child: Card(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text(
+            "OU Notes",
+            style: TextStyle(
+              fontSize: 50,
+              color: Colors.white,
+              fontWeight: FontWeight.w200,
+            ),
+          ),
+          SizedBox(
+            height: 85,
+          ),
+          Card(
+            margin: EdgeInsets.all(30),
             color: Colors.white,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -27,6 +38,8 @@ class LoginPage extends StatelessWidget {
                       decoration: InputDecoration(
                         hintText: "Enter Email",
                         labelText: "Email",
+                        labelStyle: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.w300),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
                               const BorderSide(color: Colors.black, width: 2.0),
@@ -44,6 +57,8 @@ class LoginPage extends StatelessWidget {
                       decoration: InputDecoration(
                         hintText: "Enter Password",
                         labelText: "Password",
+                        labelStyle: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.w300),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
                               const BorderSide(color: Colors.black, width: 2.0),
@@ -72,7 +87,7 @@ class LoginPage extends StatelessWidget {
               ],
             ),
           ),
-        ),
+        ],
       ),
     );
   }
