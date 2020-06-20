@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:ou_notes/pages/register_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -91,7 +92,12 @@ class _LoginPageState extends State<LoginPage> {
                 Text("(or)"),
                 Container(
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => RegisterPage()));
+                    },
                     child: Text(
                       "Register",
                       style: TextStyle(
