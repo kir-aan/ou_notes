@@ -77,16 +77,27 @@ class _LoginPageState extends State<LoginPage> {
                 Container(
                   child: RaisedButton(
                     onPressed: () {},
-                    child: Text("LOGIN"),
+                    child: Text(
+                      "LOGIN",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w300,
+                      ),
+                    ),
                     color: Colors.black,
                     textColor: Colors.white,
                   ),
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 6),
+                Text("(or)"),
                 Container(
                   child: RaisedButton(
                     onPressed: () {},
-                    child: Text("Register"),
+                    child: Text(
+                      "Register",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w300,
+                      ),
+                    ),
                     color: Colors.white,
                     textColor: Colors.black,
                   ),
