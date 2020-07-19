@@ -12,7 +12,7 @@ class _RegisterPageState extends State<RegisterPage> {
       backgroundColor: Colors.black,
       body: Center(
         child: SingleChildScrollView(
-                  child: Column(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
@@ -23,7 +23,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   fontWeight: FontWeight.w200,
                 ),
               ),
-              SizedBox(height:60),
+              SizedBox(height: 60),
               Text(
                 "Register",
                 style: TextStyle(
@@ -49,7 +49,8 @@ class _RegisterPageState extends State<RegisterPage> {
                             hintText: "Enter Name",
                             labelText: "Name",
                             labelStyle: TextStyle(
-                                color: Colors.black, fontWeight: FontWeight.w300),
+                                color: Colors.black,
+                                fontWeight: FontWeight.w300),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
                                   color: Colors.black, width: 2.0),
@@ -69,7 +70,8 @@ class _RegisterPageState extends State<RegisterPage> {
                             hintText: "Enter Email",
                             labelText: "Email",
                             labelStyle: TextStyle(
-                                color: Colors.black, fontWeight: FontWeight.w300),
+                                color: Colors.black,
+                                fontWeight: FontWeight.w300),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
                                   color: Colors.black, width: 2.0),
@@ -88,7 +90,8 @@ class _RegisterPageState extends State<RegisterPage> {
                             hintText: "Enter Password",
                             labelText: "Password",
                             labelStyle: TextStyle(
-                                color: Colors.black, fontWeight: FontWeight.w300),
+                                color: Colors.black,
+                                fontWeight: FontWeight.w300),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
                                   color: Colors.black, width: 2.0),
@@ -107,7 +110,8 @@ class _RegisterPageState extends State<RegisterPage> {
                             hintText: "Re-Enter Password",
                             labelText: "Confirm password",
                             labelStyle: TextStyle(
-                                color: Colors.black, fontWeight: FontWeight.w300),
+                                color: Colors.black,
+                                fontWeight: FontWeight.w300),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
                                   color: Colors.black, width: 2.0),
