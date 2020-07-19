@@ -49,7 +49,8 @@ class _LoginPageState extends State<LoginPage> {
                             hintText: "Enter Email",
                             labelText: "Email",
                             labelStyle: TextStyle(
-                                color: Colors.black, fontWeight: FontWeight.w300),
+                                color: Colors.black,
+                                fontWeight: FontWeight.w300),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
                                   color: Colors.black, width: 2.0),
@@ -68,7 +69,8 @@ class _LoginPageState extends State<LoginPage> {
                             hintText: "Enter Password",
                             labelText: "Password",
                             labelStyle: TextStyle(
-                                color: Colors.black, fontWeight: FontWeight.w300),
+                                color: Colors.black,
+                                fontWeight: FontWeight.w300),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
                                   color: Colors.black, width: 2.0),

@@ -23,7 +23,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   fontWeight: FontWeight.w200,
                 ),
               ),
-              SizedBox(height:40),
+              SizedBox(height:60),
               Text(
                 "Register",
                 style: TextStyle(
