@@ -1,5 +1,7 @@
+import 'package:flutter/material.dart';
+
 class Branch {
   final String id;
   final String title;
-  const Branch(this.id, this.title);
+  const Branch({@required this.id, @required this.title});
 }
