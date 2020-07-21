@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './pages/login_page.dart';
+import './pages/branches_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,23 +13,24 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.black,
         primarySwatch: Colors.grey,
-        accentColor: Colors.deepOrange[400],
+        accentColor: Colors.amber[800],
+        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        fontFamily: 'RobotoCondensed',
+        textTheme: ThemeData.light().textTheme.copyWith(
+              bodyText1: TextStyle(
+                color: Colors.green[900],
+              ),
+              bodyText2: TextStyle(
+                color: Colors.blueGrey[700],
+              ),
+              headline1: TextStyle(
+                fontSize: 50,
+                fontFamily: 'RobotoCondensed',
+                fontWeight: FontWeight.bold,
+              ),
+            ),
       ),
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("OU Notes"),
-      ),
-      body: Center(
-        child: Text("OU NOTES HOMEPAGE"),
-      ),
+      home: BranchesPage(),
     );
   }
 }
