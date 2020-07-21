@@ -14,7 +14,7 @@ class BranchesPage extends StatelessWidget {
         children: DUMMY_BRANCHES.map((b) => BranchItem(b.title)).toList(),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200,
-          mainAxisSpacing: 20,
+          mainAxisSpacing: 40,
           crossAxisSpacing: 20,
           childAspectRatio: 3 / 2,
         ),
