@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 import '../pages/semesters_page.dart';
 
 class BranchItem extends StatelessWidget {
-  final String title;
-  BranchItem(this.title);
+  final String branchID;
+  final String branchName;
+  BranchItem(this.branchID, this.branchName);
 
   void selectBranch(BuildContext ctx) {
     Navigator.of(ctx).push(
       MaterialPageRoute(
         builder: (_) {
-          return SemesterPage();
+          return SemesterPage(branchID, branchName);
         },
       ),
     );
@@ -24,7 +25,7 @@ class BranchItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(10),
         child: Text(
-          title,
+          branchName,
           style: Theme.of(context).textTheme.headline1,
           textAlign: TextAlign.center,
         ),
