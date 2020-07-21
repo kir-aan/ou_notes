@@ -11,7 +11,7 @@ class BranchesPage extends StatelessWidget {
       ),
       body: GridView(
         padding: const EdgeInsets.all(20),
-        children: DUMMY_BRANCHES.map((b) => BranchItem(b.title)).toList(),
+        children: DUMMY_BRANCHES.map((b) => BranchItem(b.id, b.name)).toList(),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200,
           mainAxisSpacing: 40,
