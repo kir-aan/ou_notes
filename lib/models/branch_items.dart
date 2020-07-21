@@ -12,7 +12,7 @@ class BranchItem extends StatelessWidget {
         style: Theme.of(context).textTheme.headline1,
       ),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(15),
         gradient: LinearGradient(
           colors: [
             Theme.of(context).accentColor.withOpacity(0.7),
