@@ -10,6 +10,7 @@ class BranchItem extends StatelessWidget {
       child: Text(
         title,
         style: Theme.of(context).textTheme.headline1,
+        textAlign: TextAlign.center,
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
