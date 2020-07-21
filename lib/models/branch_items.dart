@@ -31,6 +31,7 @@ class BranchItem extends StatelessWidget {
               style: Theme.of(context).textTheme.headline1,
             ),
           ),
+          elevation: 20,
         ),
       ),
     );
