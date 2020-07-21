@@ -20,24 +20,16 @@ class BranchItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () => selectBranch(context),
-      splashColor: Theme.of(context).primaryColor,
+      splashColor: Theme.of(context).splashColor,
       borderRadius: BorderRadius.circular(15),
-      child: Container(
-        padding: const EdgeInsets.all(10),
-        child: Text(
-          branchName,
-          style: Theme.of(context).textTheme.headline1,
-          textAlign: TextAlign.center,
-        ),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-          gradient: LinearGradient(
-            colors: [
-              Theme.of(context).accentColor.withOpacity(0.7),
-              Theme.of(context).accentColor,
-            ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+      child: Padding(
+        padding: const EdgeInsets.all(5),
+        child: Card(
+          child: Center(
+            child: Text(
+              branchName,
+              style: Theme.of(context).textTheme.headline1,
+            ),
           ),
         ),
       ),
