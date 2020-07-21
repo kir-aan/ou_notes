@@ -1,21 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:ou_notes/pages/login_page.dart';
+import './pages/login_page.dart';
 
 void main() {
-  runApp(OUNotes());
+  runApp(MyApp());
 }
 
-class OUNotes extends StatefulWidget {
-  @override
-  _OUNotesState createState() => _OUNotesState();
-}
-
-class _OUNotesState extends State<OUNotes> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginPage(),
       title: 'OU Notes',
+      theme: ThemeData(
+        primaryColor: Colors.black,
+        primarySwatch: Colors.grey,
+        accentColor: Colors.deepOrange[400],
+      ),
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("OU Notes"),
+      ),
+      body: Center(
+        child: Text("OU NOTES HOMEPAGE"),
+      ),
     );
   }
 }
