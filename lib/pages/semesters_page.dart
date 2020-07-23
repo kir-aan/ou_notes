@@ -14,8 +14,9 @@ class SemesterPage extends StatelessWidget {
       ),
       body: GridView(
         padding: const EdgeInsets.all(20),
-        children:
-            [1, 2, 3, 4, 5, 6, 7, 8].map((sem) => SemesterItem(sem)).toList(),
+        children: [1, 2, 3, 4, 5, 6, 7, 8]
+            .map((sem) => SemesterItem(sem, branchID))
+            .toList(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 40,
