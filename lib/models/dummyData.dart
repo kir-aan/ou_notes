@@ -1,4 +1,4 @@
-import './branch.dart';
+import 'branch.dart';
 
 const DUMMY_BRANCHES = const [
   Branch(id: 'b1', name: "IT"),
