@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './branches_page.dart';
+
 class RegisterPage extends StatefulWidget {
   @override
   _RegisterPageState createState() => _RegisterPageState();
@@ -124,10 +126,12 @@ class _RegisterPageState extends State<RegisterPage> {
                     Container(
                       child: RaisedButton(
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => RegisterPage()));
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => BranchesPage(),
+                            ),
+                          );
                         },
                         child: Text(
                           "Register",
