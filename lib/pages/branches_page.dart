@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/dummyBranchesData.dart';
+import '../models/dummyData.dart';
 import '../widgets/branch_item.dart';
 
 class BranchesPage extends StatelessWidget {
