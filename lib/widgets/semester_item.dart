@@ -1,14 +1,25 @@
 import 'package:flutter/material.dart';
+import '../pages/subjects_page.dart';
 
 class SemesterItem extends StatelessWidget {
   final int semester;
 
   SemesterItem(this.semester);
 
+  void semesterSelected(BuildContext ctx) {
+    Navigator.of(ctx).push(
+      MaterialPageRoute(
+        builder: (_) {
+          return SubjectsPage();
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () => semesterSelected(context),
       splashColor: Theme.of(context).splashColor,
       borderRadius: BorderRadius.circular(15),
       child: Padding(
