@@ -18,17 +18,11 @@ class SubjectsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("SEM-$semester"),
       ),
-      body: GridView(
+      body: ListView(
         padding: const EdgeInsets.all(20),
         children: subjects
             .map((sub) => SubjectItem(sub.subjectName, sub.subjectNotes))
             .toList(),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          mainAxisSpacing: 40,
-          crossAxisSpacing: 20,
-          childAspectRatio: 3 / 2,
-        ),
       ),
     );
   }
