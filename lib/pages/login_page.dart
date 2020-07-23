@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import './register_page.dart';
+import './branches_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -81,7 +82,14 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     Container(
                       child: RaisedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => BranchesPage(),
+                            ),
+                          );
+                        },
                         child: Text(
                           "LOGIN",
                           style: TextStyle(
@@ -98,9 +106,11 @@ class _LoginPageState extends State<LoginPage> {
                       child: RaisedButton(
                         onPressed: () {
                           Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => RegisterPage()));
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => RegisterPage(),
+                            ),
+                          );
                         },
                         child: Text(
                           "Register",
