@@ -16,7 +16,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Theme.of(context).primaryColor,
       body: Center(
         child: SingleChildScrollView(
           child: Column(
@@ -44,13 +44,13 @@ class _LoginPageState extends State<LoginPage> {
                         padding: const EdgeInsets.all(16.0),
                         child: TextFormField(
                           controller: _emailFieldController,
-                          cursorColor: Colors.black,
+                          cursorColor: Theme.of(context).primaryColor,
                           keyboardType: TextInputType.emailAddress,
                           decoration: InputDecoration(
                             hintText: "Enter Email",
                             labelText: "Email",
                             labelStyle: TextStyle(
-                                color: Colors.black,
+                                color: Theme.of(context).primaryColor,
                                 fontWeight: FontWeight.w300),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
@@ -70,8 +70,9 @@ class _LoginPageState extends State<LoginPage> {
                             hintText: "Enter Password",
                             labelText: "Password",
                             labelStyle: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w300),
+                              color: Theme.of(context).primaryColor,
+                              fontWeight: FontWeight.w300,
+                            ),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
                                   color: Colors.black, width: 2.0),
@@ -96,7 +97,7 @@ class _LoginPageState extends State<LoginPage> {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        color: Colors.black,
+                        color: Theme.of(context).primaryColor,
                         textColor: Colors.white,
                       ),
                     ),
@@ -119,7 +120,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                         color: Colors.white,
-                        textColor: Colors.black,
+                        textColor: Theme.of(context).primaryColor,
                       ),
                     ),
                   ],

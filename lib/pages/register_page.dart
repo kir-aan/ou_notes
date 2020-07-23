@@ -11,7 +11,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Theme.of(context).primaryColor,
       body: Center(
         child: SingleChildScrollView(
           child: Column(
@@ -45,13 +45,13 @@ class _RegisterPageState extends State<RegisterPage> {
                         padding: const EdgeInsets.all(16.0),
                         child: TextFormField(
                           // controller: _emailFieldController,
-                          cursorColor: Colors.black,
+                          cursorColor: Theme.of(context).primaryColor,
                           keyboardType: TextInputType.text,
                           decoration: InputDecoration(
                             hintText: "Enter Name",
                             labelText: "Name",
                             labelStyle: TextStyle(
-                                color: Colors.black,
+                                color: Theme.of(context).primaryColor,
                                 fontWeight: FontWeight.w300),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
@@ -66,13 +66,13 @@ class _RegisterPageState extends State<RegisterPage> {
                         padding: const EdgeInsets.all(16.0),
                         child: TextFormField(
                           // controller: _emailFieldController,
-                          cursorColor: Colors.black,
+                          cursorColor: Theme.of(context).primaryColor,
                           keyboardType: TextInputType.emailAddress,
                           decoration: InputDecoration(
                             hintText: "Enter Email",
                             labelText: "Email",
                             labelStyle: TextStyle(
-                                color: Colors.black,
+                                color: Theme.of(context).primaryColor,
                                 fontWeight: FontWeight.w300),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
@@ -92,7 +92,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             hintText: "Enter Password",
                             labelText: "Password",
                             labelStyle: TextStyle(
-                                color: Colors.black,
+                                color: Theme.of(context).primaryColor,
                                 fontWeight: FontWeight.w300),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
@@ -112,7 +112,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             hintText: "Re-Enter Password",
                             labelText: "Confirm password",
                             labelStyle: TextStyle(
-                                color: Colors.black,
+                                color: Theme.of(context).primaryColor,
                                 fontWeight: FontWeight.w300),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
@@ -139,7 +139,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        color: Colors.black,
+                        color: Theme.of(context).primaryColor,
                         textColor: Colors.white,
                       ),
                     ),
