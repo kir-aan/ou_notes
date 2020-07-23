@@ -3,14 +3,18 @@ import '../pages/subjects_page.dart';
 
 class SemesterItem extends StatelessWidget {
   final int semester;
+  final String branchID;
 
-  SemesterItem(this.semester);
+  SemesterItem(this.semester, this.branchID);
 
   void semesterSelected(BuildContext ctx) {
     Navigator.of(ctx).push(
       MaterialPageRoute(
         builder: (_) {
-          return SubjectsPage();
+          return SubjectsPage(
+            semester: semester,
+            branchID: branchID,
+          );
         },
       ),
     );
