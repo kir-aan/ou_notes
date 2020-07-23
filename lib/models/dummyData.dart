@@ -13,8 +13,10 @@ const DUMMY_BRANCHES = const [
 
 const DUMMY_SUBJECTS = const [
   Subject(
-    id: 'sub1',
-    subjectName: 'SubjectName1',
+    branchID: 'b1',
+    semester: 1,
+    subjectID: 'b1sem1sub1',
+    subjectName: 'B1Sem1SubjectName1',
     subjectNotes: [
       "Unit-1.pdf",
       "Unit-2.pdf",
@@ -24,8 +26,10 @@ const DUMMY_SUBJECTS = const [
     ],
   ),
   Subject(
-    id: 'sub2',
-    subjectName: 'SubjectName2',
+    branchID: 'b1',
+    semester: 1,
+    subjectID: 'b1sem1sub2',
+    subjectName: 'B1Sem1SubjectName2',
     subjectNotes: [
       "Unit-1.pdf",
       "Unit-2.pdf",
@@ -35,8 +39,10 @@ const DUMMY_SUBJECTS = const [
     ],
   ),
   Subject(
-    id: 'sub3',
-    subjectName: 'SubjectName3',
+    branchID: 'b1',
+    semester: 1,
+    subjectID: 'b1sem1sub3',
+    subjectName: 'B1Sem1SubjectName3',
     subjectNotes: [
       "Unit-1.pdf",
       "Unit-2.pdf",
@@ -45,4 +51,121 @@ const DUMMY_SUBJECTS = const [
       "Unit-5.pdf",
     ],
   ),
+  Subject(
+    branchID: 'b1',
+    semester: 2,
+    subjectID: 'b1sem2sub1',
+    subjectName: 'B1Sem2SubjectName1',
+    subjectNotes: [
+      "Unit-1.pdf",
+      "Unit-2.pdf",
+      "Unit-3.pdf",
+      "Unit-4.pdf",
+      "Unit-5.pdf",
+    ],
+  ),
+  Subject(
+    branchID: 'b1',
+    semester: 2,
+    subjectID: 'b1sem2sub2',
+    subjectName: 'B1Sem2SubjectName2',
+    subjectNotes: [
+      "Unit-1.pdf",
+      "Unit-2.pdf",
+      "Unit-3.pdf",
+      "Unit-4.pdf",
+      "Unit-5.pdf",
+    ],
+  ),
+  Subject(
+    branchID: 'b1',
+    semester: 2,
+    subjectID: 'b1sem2sub3',
+    subjectName: 'B1Sem2SubjectName3',
+    subjectNotes: [
+      "Unit-1.pdf",
+      "Unit-2.pdf",
+      "Unit-3.pdf",
+      "Unit-4.pdf",
+      "Unit-5.pdf",
+    ],
+  ),
+  Subject(
+    branchID: 'b2',
+    semester: 1,
+    subjectID: 'b2sem1sub1',
+    subjectName: 'B2Sem1SubjectName1',
+    subjectNotes: [
+      "Unit-1.pdf",
+      "Unit-2.pdf",
+      "Unit-3.pdf",
+      "Unit-4.pdf",
+      "Unit-5.pdf",
+    ],
+  ),
+  Subject(
+    branchID: 'b2',
+    semester: 1,
+    subjectID: 'b2sem1sub2',
+    subjectName: 'B2Sem1SubjectName2',
+    subjectNotes: [
+      "Unit-1.pdf",
+      "Unit-2.pdf",
+      "Unit-3.pdf",
+      "Unit-4.pdf",
+      "Unit-5.pdf",
+    ],
+  ),
+  Subject(
+    branchID: 'b2',
+    semester: 1,
+    subjectID: 'b2sem1sub3',
+    subjectName: 'B2Sem1SubjectName3',
+    subjectNotes: [
+      "Unit-1.pdf",
+      "Unit-2.pdf",
+      "Unit-3.pdf",
+      "Unit-4.pdf",
+      "Unit-5.pdf",
+    ],
+  ),
+  Subject(
+    branchID: 'b2',
+    semester: 2,
+    subjectID: 'b2sem2sub1',
+    subjectName: 'B2Sem2SubjectName1',
+    subjectNotes: [
+      "Unit-1.pdf",
+      "Unit-2.pdf",
+      "Unit-3.pdf",
+      "Unit-4.pdf",
+      "Unit-5.pdf",
+    ],
+  ),
+  Subject(
+    branchID: 'b2',
+    semester: 2,
+    subjectID: 'b2sem2sub2',
+    subjectName: 'B2Sem2SubjectName2',
+    subjectNotes: [
+      "Unit-1.pdf",
+      "Unit-2.pdf",
+      "Unit-3.pdf",
+      "Unit-4.pdf",
+      "Unit-5.pdf",
+    ],
+  ),
+  Subject(
+    branchID: 'b2',
+    semester: 2,
+    subjectID: 'b2sem2sub3',
+    subjectName: 'B2Sem2SubjectName3',
+    subjectNotes: [
+      "Unit-1.pdf",
+      "Unit-2.pdf",
+      "Unit-3.pdf",
+      "Unit-4.pdf",
+      "Unit-5.pdf",
+    ],
+  )
 ];
