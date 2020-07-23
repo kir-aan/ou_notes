@@ -97,7 +97,7 @@ class _LoginPageState extends State<LoginPage> {
                     Container(
                       child: RaisedButton(
                         onPressed: () {
-                          Navigator.push(
+                          Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => RegisterPage()));
