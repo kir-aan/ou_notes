@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/semseter_item.dart';
+import '../widgets/semseter_item.dart';
 
 class SemesterPage extends StatelessWidget {
   final String branchID;
