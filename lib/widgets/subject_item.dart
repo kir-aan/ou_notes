@@ -9,17 +9,21 @@ class SubjectItem extends StatelessWidget {
     return InkWell(
       onTap: () {},
       splashColor: Theme.of(context).splashColor,
-      borderRadius: BorderRadius.circular(15),
+      borderRadius: BorderRadius.circular(10),
       child: Padding(
-        padding: const EdgeInsets.all(5),
-        child: Card(
-          child: Center(
-            child: Text(
-              subjectName,
-              style: Theme.of(context).textTheme.bodyText1,
+        padding: const EdgeInsets.all(8),
+        child: Container(
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: Theme.of(context).primaryColor,
+              width: 2,
             ),
           ),
-          elevation: 20,
+          child: ListTile(
+            leading: Icon(Icons.folder),
+            title: Text(subjectName),
+            trailing: Text(subjectNotes.length.toString()),
+          ),
         ),
       ),
     );
