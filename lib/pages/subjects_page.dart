@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/dummyData.dart';
+import '../widgets/subject_item.dart';
 
 class SubjectsPage extends StatelessWidget {
   final int semester;
@@ -17,7 +18,18 @@ class SubjectsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("SEM-$semester"),
       ),
-      body: Center(child: Text("${subjects[0].subjectName}")),
+      body: GridView(
+        padding: const EdgeInsets.all(20),
+        children: subjects
+            .map((sub) => SubjectItem(sub.subjectName, sub.subjectNotes))
+            .toList(),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisSpacing: 40,
+          crossAxisSpacing: 20,
+          childAspectRatio: 3 / 2,
+        ),
+      ),
     );
   }
 }
