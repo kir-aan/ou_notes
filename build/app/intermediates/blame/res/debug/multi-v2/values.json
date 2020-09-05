@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/kiran/Documents/Projects/Flutter/ou_notes/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/media/kiran/storage/Projects/ou_notes/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/home/kiran/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/values/values.xml",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/kiran/Documents/Projects/Flutter/ou_notes/android/app/src/main/res/values/styles.xml",
+                    "source": "/media/kiran/storage/Projects/ou_notes/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
